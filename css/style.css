@@ -216,17 +216,17 @@ font-family: Helvetica, Arial;
   }
 }
 
-.js .js-content section {
+.js [data-tab="content"] section {
   display: none;
 }
 
-.js .js-content section.ativo {
+[data-tab="content"] section.ativo {
   display: block !important;
 }
-.js .js-content section.show-right {
+[data-tab="content"] section.ativo.show-right {
   animation: show-right .5s forwards;
 }
-.js .js-content section.show-down {
+[data-tab="content"] section.ativo.show-down {
   animation: show-down .5s forwards;
 }
 
@@ -251,20 +251,20 @@ font-family: Helvetica, Arial;
   }
 }
 
-.js-accordion dd {
+[data-anime="accordion"] dd {
   display: none;
 }
 
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
   content: '⬎';
   margin-left: 10px;
 }
 
-.js-accordion dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
   content: '⬏';
 }
 
-.js-accordion dd.ativo {
+[data-anime="accordion"] dd.ativo {
   display: block;
   animation: faq .5s forwards;
 }
@@ -280,13 +280,13 @@ to {
 }
 }
 
-.js .js-scroll {
+.js [ data-anime="scroll"]{
   opacity: 0;
   transition: 0.4s;
   transform: translate3d(-20px, 0, 0);
 }
 
-.js .js-scroll.ativo {
+.js [ data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
