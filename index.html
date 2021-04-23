@@ -11,10 +11,19 @@
   <script>document.documentElement.className += ' js';</script>
 </head>
 <body>
+
   <div class="grid-container">
     <nav class="menu" data-menu="suave">
       <ul>
         <li><a href="#animais">Animais</a></li>
+        <li data-dropdown><a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
         <li><a data-modal="abrir" href="login.html">login 🠖</a></li>
@@ -176,7 +185,7 @@
     </div>
   </section>
 
-
-  <script type="module" src="js/script.js"></script>
+  <script src="./js/exercicioSetTimeOut.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 </html>
