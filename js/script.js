@@ -5,9 +5,10 @@ import menuTab from './modules/menutab.js'
 import initModal from './modules/modal.js'
 import initTooltip from './modules/tooltip.js'
 import initDropDown from './modules/dropdown-menu.js'
-import initAnimaNumeros from './modules/anima-numeros.js'
 import initMenuMobile from './modules/menu-mobile.js'
 import initDate from './modules/date.js'
+import initFetchAnimais from './modules/fetch-animais.js'
+import initFetchBitcoin from './modules/fetch-bitcoin.js'
 
 initAnimacaoScroll();
 initScrollSuave();
@@ -16,6 +17,7 @@ menuTab();
 initModal();
 initTooltip();
 initDropDown();
-initAnimaNumeros();
 initMenuMobile();
 initDate();
+initFetchAnimais();
+initFetchBitcoin();
