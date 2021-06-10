@@ -28,8 +28,39 @@ class Button {
     targetElement.appendChild(this.element());
     return targetElement;
   }
+  static blueButton(text) {
+    return new Button(text, 'blue', 'white');
+  }
 }
 
-const blueBtn = new Button('Comprar', 'Blue', 'white');
+const botaoAzul = Button.blueButton('ola');
 
-console.log(blueBtn.appendTo('body'));
+console.log(botaoAzul);
+
+// const blueBtn = new Button('Comprar', 'Blue', 'white');
+
+// console.log(blueBtn.appendTo('body'));
+
+// class Button {
+//   constructor(options) {
+//     this.options = options;
+//   }
+//   static createButton(text, background) {
+//     const buttonElement = document.createElement('button');
+//     buttonElement.innerText = text;
+//     buttonElement.style.background = background;
+//     return buttonElement;
+//   }
+// }
+
+// const opctionsBtn = {
+//   backgroundColor: 'blue',
+//   color: 'white',
+//   borderRadius: '4px'
+// }
+
+// const blueBtn = new Button(opctionsBtn)
+
+// const blueButtonStatic = Button.createButton('click', 'blue');
+
+// console.log(blueButtonStatic);
